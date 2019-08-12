@@ -58,3 +58,26 @@ class Point:
 
     def __repr__(self):
         return f"Point(x={self.x}, y={self.y}, z={self.z})"
+
+    def __add__(self, other):
+        if not isinstance(other, self.__class__):
+            raise TypeError(f"Cannot add point to {other.__class__}")
+        return Point(self.x + other.x, self.y + other.y, self.z + other.z)
+
+    def __sub__(self, other):
+        if not isinstance(other, self.__class__):
+            raise TypeError(f"Cannot add point to {other.__class__}")
+        return Point(self.x - other.x, self.y - other.y, self.z - other.z)
+
+    def __mul__(self, scalar):
+        return self.multiply(scalar)
+
+    def __rmul__(self, scalar):
+        return self.multiply(scalar)
+
+    def multiply(self, scalar):
+        return Point(self.x * scalar, self.y * scalar, self.z * scalar)
+
+    def __iter__(self):
+        return (value for value in (self.x, self.y, self.z))
+
