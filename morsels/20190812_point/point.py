@@ -52,6 +52,8 @@ class Point:
         if not isinstance(other, self.__class__):
             return False
         return self.x == other.x and self.y == other.y and self.z == other.z
+        # Cleaner maybe:
+        # return (self.x, self.y, self.z) == (other.x, other.y, other.z)
 
     def __str__(self):
         return f"Point(x={self.x}, y={self.y}, z={self.z})"
@@ -81,3 +83,20 @@ class Point:
     def __iter__(self):
         return (value for value in (self.x, self.y, self.z))
 
+    # Alternate __iter__ implementations:
+    #  def __iter__(self):
+    #      yield self.x
+    #      yield self.y
+    #      yield self.z
+    #
+    #  def __iter__(self):
+    #      yield from (self.x, self.y, self.z)
+    #
+    #  def __iter__(self):
+    #      return iter((self.x, self.y, self.z))
+
+    # Note that having the __iter__ implementation allows us to do interesting tuple unpacking
+    # Add could be the following, because the objects unpack:
+    # x1, y1, z1 = self
+    # x2, y2, z2 = other
+    # return Point(x1 + x2, y1 + y2, z1 + z2)
