@@ -58,7 +58,7 @@ class SuppressTests(unittest.TestCase):
                 self.assertEqual(my_list, ['item'])
 
     # To test the Bonus part of this exercise, comment out the following line
-    @unittest.expectedFailure
+    #@unittest.expectedFailure
     def test_catches_any_number_of_exceptions(self):
         with suppress(ValueError, TypeError):
             int('hello')

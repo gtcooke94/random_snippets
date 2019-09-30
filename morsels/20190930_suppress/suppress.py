@@ -1,13 +1,13 @@
 class suppress():
     
-    def __init__(self, exception):
-        self.exception = exception
+    def __init__(self, *exceptions):
+        self.exceptions = exceptions
         
     def __enter__(self):
         return self
         
     def __exit__(self, exc_type, exc_val, trace):
-        return isinstance(exc_val, self.exception)
+        return isinstance(exc_val, self.exceptions)
 
 """
 From python docs on context managers:
