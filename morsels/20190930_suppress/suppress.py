@@ -1,5 +1,7 @@
-class suppress():
-    
+from contextlib import ContextDecorator
+
+class suppress(ContextDecorator):
+
     def __init__(self, *exceptions):
         self.exceptions = exceptions
         
@@ -7,7 +9,10 @@ class suppress():
         return self
         
     def __exit__(self, exc_type, exc_val, trace):
+        self.exception = exc_val
+        self.traceback = trace
         return isinstance(exc_val, self.exceptions)
+
 
 """
 From python docs on context managers:
