@@ -20,3 +20,9 @@ String Parsing:
 
 Generators:
 - morsels/20190902_deep_flatten
+
+Property:
+- bites/34.UserClass
+
+Dunder Methods:
+- bites/34.UserClass
