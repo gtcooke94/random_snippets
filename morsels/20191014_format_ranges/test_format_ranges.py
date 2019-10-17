@@ -39,7 +39,6 @@ class FormatRangesTests(unittest.TestCase):
         self.assertEqual(format_ranges([10, 20, 12, 3, 11]), '3,10-12,20')
 
     # To test the Bonus part of this exercise, comment out the following line
-    @unittest.expectedFailure
     def test_duplicate_numbers(self):
         self.assertEqual(
             format_ranges([10, 20, 10, 12, 11, 20]),
