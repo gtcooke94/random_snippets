@@ -25,9 +25,13 @@ Generators:
 Itertools:
 - morsels/20191014_format_ranges
 
-
 Property:
 - bites/34.UserClass
 
 Dunder Methods:
 - bites/34.UserClass
+- morsels/20191021_fuzzy_string
+
+Unicode:
+- morsels/20191021_fuzzy_string
+
