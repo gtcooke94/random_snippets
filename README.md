@@ -7,10 +7,12 @@ Topics:
 
 Abstract Classes/ABC/Metaclass:
 - bites/24.ABCs
+- morsels/20191021_fuzzy_string
 
 Decorators:
 - morsels/20190819_count_decorator
 - morsels/20190930_suppress
+- morsels/20191021_fuzzy_string
 
 Context Managers:
 - morsels/20190930_suppress
