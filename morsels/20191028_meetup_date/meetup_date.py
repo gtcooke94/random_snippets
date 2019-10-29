@@ -1,6 +1,7 @@
 import datetime
 import calendar
 
+
 def meetup_date(year, month, nth=4, weekday=3):
     if nth > 0:
         # Start from the beginning of the month
@@ -9,13 +10,13 @@ def meetup_date(year, month, nth=4, weekday=3):
         advance_day = 1
         advance_week = 7
     else:
-        # Start from the end of the month ex: nth = -2, weekday = 3 would be the second to last Thursday of the month
+        # Start from the end of the month ex: nth = -2, weekday = 3 would be
+        # the second to last Thursday of the month
         current = datetime.date(year, month, calendar.monthrange(year, month)[1])
         current_nth = 1
         advance_day = -1
         advance_week = -7
         nth = -nth
-
 
     while current.weekday() != weekday:
         current = advance_days(current, advance_day)
@@ -24,7 +25,16 @@ def meetup_date(year, month, nth=4, weekday=3):
         current_nth += 1
     return current
 
+
 def advance_days(current, days):
     return current + datetime.timedelta(days=days)
 
 
+class Weekday:
+    MONDAY = 0
+    TUESDAY = 1
+    WEDNESDAY = 2
+    THURSDAY = 3
+    FRIDAY = 4
+    SATURDAY = 5
+    SUNDAY = 6

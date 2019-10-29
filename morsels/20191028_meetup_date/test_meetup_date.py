@@ -82,7 +82,7 @@ class MeetupDateTests(unittest.TestCase):
         )
 
     # To test the Bonus part of this exercise, comment out the following line
-    @unittest.expectedFailure
+    #  @unittest.expectedFailure
     def test_add_Weekday_object(self):
         from meetup_date import Weekday
         # First Monday

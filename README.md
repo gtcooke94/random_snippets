@@ -37,3 +37,5 @@ Dunder Methods:
 Unicode:
 - morsels/20191021_fuzzy_string
 
+Datetime:
+- morsels/20191028_meetup_date
