@@ -29,13 +29,21 @@ Itertools:
 
 Property:
 - bites/34.UserClass
+- morsels/20191104_vector
 
 Dunder Methods:
 - bites/34.UserClass
 - morsels/20191021_fuzzy_string
+- morsels/20191104_vector
 
 Unicode:
 - morsels/20191021_fuzzy_string
 
 Datetime:
 - morsels/20191028_meetup_date
+
+Slots:
+- morsels/20191104_vector
+
+Immutable:
+- morsels/20191104_vector
