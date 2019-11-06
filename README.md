@@ -47,3 +47,6 @@ Slots:
 
 Immutable:
 - morsels/20191104_vector
+
+Dataclass:
+- morsels/20191104_vector
