@@ -30,6 +30,7 @@ Itertools:
 Property:
 - bites/34.UserClass
 - morsels/20191104_vector
+- morsels/20191111_alias
 
 Dunder Methods:
 - bites/34.UserClass
@@ -50,3 +51,6 @@ Immutable:
 
 Dataclass:
 - morsels/20191104_vector
+
+Descriptors:
+- morsels/20191111_alias
