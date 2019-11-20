@@ -23,6 +23,7 @@ String Parsing:
 Generators:
 - morsels/20190902_deep_flatten
 - morsels/20191014_format_ranges
+- morsels/20191118_interleave
 
 Itertools:
 - morsels/20191014_format_ranges
