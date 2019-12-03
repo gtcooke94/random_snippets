@@ -16,6 +16,7 @@ Decorators:
 
 Context Managers:
 - morsels/20190930_suppress
+- morsels/20191125_cd
 
 String Parsing:
 - morsels/20191007_tags_equal
