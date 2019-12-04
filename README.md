@@ -56,3 +56,6 @@ Dataclass:
 
 Descriptors:
 - morsels/20191111_alias
+
+Big Numbers/Decimal:
+- morsels/20191202_perfect_square
