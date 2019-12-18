@@ -39,6 +39,9 @@ Dunder Methods:
 - morsels/20191021_fuzzy_string
 - morsels/20191104_vector
 
+Inheritance/Custom Dictionary:
+- morsels/20191209_permadict
+
 Unicode:
 - morsels/20191021_fuzzy_string
 
