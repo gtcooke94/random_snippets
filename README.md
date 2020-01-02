@@ -8,6 +8,7 @@ Topics:
 Abstract Classes/ABC/Metaclass:
 - bites/24.ABCs
 - morsels/20191021_fuzzy_string
+- morsels/20191216_mutable_string
 
 Decorators:
 - morsels/20190819_count_decorator
@@ -39,8 +40,9 @@ Dunder Methods:
 - morsels/20191021_fuzzy_string
 - morsels/20191104_vector
 
-Inheritance/Custom Dictionary:
+Inheritance/Custom Collections:
 - morsels/20191209_permadict
+- morsels/20191216_mutable_string
 
 Unicode:
 - morsels/20191021_fuzzy_string
