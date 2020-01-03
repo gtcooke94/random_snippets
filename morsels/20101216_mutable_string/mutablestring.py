@@ -1,6 +1,9 @@
 from collections import UserString
+from collections.abc import MutableSequence
 
-class MutableString(UserString):
+# If we inherit from MutableSequence we get append, reverse, extend, pop, remove for free
+# Mutable sequences must implement __getitem__, __setitem__, __delitem__, __len__, insert
+class MutableString(UserString, MutableSequence):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -31,15 +34,16 @@ class MutableString(UserString):
     def __delitem__(self, s):
         self.__setitem__(s, "")
 
-    def append(self, val):
-        self.data = self.data + val
 
     def insert(self, loc, val):
         strlist = list(self.data)
         strlist.insert(loc, val)
         self.data = "".join(strlist)
 
-    def pop(self, loc=-1):
-        to_return = self[loc]
-        del self[loc]
-        return to_return
+    #  def append(self, val):
+    #      self.data = self.data + val
+    #
+    #  def pop(self, loc=-1):
+    #      to_return = self[loc]
+    #      del self[loc]
+    #      return to_return
