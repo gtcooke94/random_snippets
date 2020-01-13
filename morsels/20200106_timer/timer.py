@@ -22,8 +22,6 @@ class Timer(ContextDecorator):
             ret = self.func(*args, **kwargs)
         return ret
 
-
-
     @property
     def mean(self):
         return mean(self.runs)
