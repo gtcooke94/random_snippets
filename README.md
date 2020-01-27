@@ -16,6 +16,7 @@ Decorators:
 - morsels/20190930_suppress
 - morsels/20191021_fuzzy_string
 - morsels/20200106_timer
+- morsels/20200120_cached_property
 
 Context Managers:
 - morsels/20190930_suppress
@@ -70,6 +71,7 @@ Dataclass:
 
 Descriptors:
 - morsels/20191111_alias
+- morsels/20200120_cached_property
 
 Big Numbers/Decimal:
 - morsels/20191202_perfect_square
