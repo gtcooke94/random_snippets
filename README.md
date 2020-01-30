@@ -5,11 +5,15 @@ This repo contains randoms snippets of code and little things I have worked on, 
 
 Topics:
 
+Attributes:
+- morsels/20200127_unpacker
+
 Abstract Classes/ABC/Metaclass:
 - bites/24.ABCs
 - morsels/20191021_fuzzy_string
 - morsels/20191216_mutable_string
 - morsels/20191230_cyclic_list
+- morsels/20200127_unpacker
 
 Decorators:
 - morsels/20190819_count_decorator
@@ -75,3 +79,6 @@ Descriptors:
 
 Big Numbers/Decimal:
 - morsels/20191202_perfect_square
+
+Sorting/Bisect:
+- FluentPython/bisect_module.py
