@@ -14,6 +14,7 @@ Abstract Classes/ABC/Metaclass:
 - morsels/20191216_mutable_string
 - morsels/20191230_cyclic_list
 - morsels/20200127_unpacker
+- morsels/20200210_proxy_dict
 
 Decorators:
 - morsels/20190819_count_decorator
@@ -47,6 +48,7 @@ Property:
 - morsels/20191104_vector
 - morsels/20191111_alias
 - morsels/20200106_timer
+- morsels/20200210_proxy_dict
 
 Dunder Methods:
 - bites/34.UserClass
