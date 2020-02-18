@@ -8,7 +8,7 @@ Topics:
 Attributes:
 - morsels/20200127_unpacker
 
-Abstract Classes/ABC/Metaclass:
+Abstract Classes/ABC:
 - bites/24.ABCs
 - morsels/20191021_fuzzy_string
 - morsels/20191216_mutable_string
@@ -27,6 +27,9 @@ Context Managers:
 - morsels/20190930_suppress
 - morsels/20191125_cd
 - morsels/20200106_timer
+
+Metaclasses:
+- morsels/20200217_fancy_reader
 
 String Parsing:
 - morsels/20191007_tags_equal
