@@ -54,3 +54,6 @@ class RowMeta(type):
 I tried to put methods on `RowMeta` that I wanted `Row` to inherit, but that doesn't work. The `Row` class itself inherits them, not _instances_ of the `Row` class.
 My implmentation is thus to have a `make_row` function that creates an instance of `Row`, which has a metaclass of `RowMeta`. This yields similar syntax to using the `NamedTuple` approach that I used prior to bonus 3.
 I had to mess around a lot with the order in which __new__, __init__, etc are all called in construction of my `Row` class, but this ended up working, and doesn't seem too terrible.
+
+
+As it turns out, the given solution doesn't use metaclasses and just makes a row class on the fly anyways without it, so even in this case metaclasses were still overkill.
