@@ -15,6 +15,7 @@ Abstract Classes/ABC:
 - morsels/20191230_cyclic_list
 - morsels/20200127_unpacker
 - morsels/20200210_proxy_dict
+- morsels/20200316_grouper
 
 Decorators:
 - morsels/20190819_count_decorator
@@ -62,6 +63,7 @@ Inheritance/Custom Collections:
 - morsels/20191209_permadict
 - morsels/20191216_mutable_string
 - morsels/20191230_cyclic_list
+- morsels/20200316_grouper
 
 Unicode:
 - morsels/20191021_fuzzy_string
