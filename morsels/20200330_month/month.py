@@ -1,12 +1,38 @@
-from functools import total_ordering
 from datetime import date
 from calendar import monthrange
 from dataclasses import dataclass
+from functools import total_ordering
+
+@dataclass(frozen=True, order=True)
+class Month:
+    __slots__ = ["year", "month", "first_day", "last_day"]
+    year: int
+    month: int
+
+    def __post_init__(self):
+        super().__setattr__("first_day", date(self.year, self.month, 1))
+        super().__setattr__(
+            "last_day",
+            date(self.year, self.month, monthrange(self.year, self.month)[1]),
+        )
+
+    @classmethod
+    def from_date(cls, date):
+        return cls(date.year, date.month)
+
+    def strftime(self, fmt):
+        return self.first_day.strftime(fmt)
+
+    def __repr__(self):
+        return f"{self.__class__.__name__}({self.year}, {self.month})"
+
+    def __str__(self):
+        return f"{self.year}-{self.month:02d}"
 
 # Using dataclass lets you lose the init, has, setattr, and delattr methods
 @dataclass(frozen=True)
 @total_ordering
-class Month:
+class Month2:
     __slots__ = ["year", "month", "first_day", "last_day"]
     year: int
     month: int
@@ -46,7 +72,7 @@ class Month:
 
 #  No dataclass implementation
 @total_ordering
-class Month2:
+class Month3:
     __slots__ = ["year", "month", "first_day", "last_day"]
 
     def __init__(self, year, month):
