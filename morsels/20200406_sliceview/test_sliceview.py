@@ -91,7 +91,7 @@ class SliceViewTests(unittest.TestCase):
         self.assertEqual(list(view), [3, 4, 7, 11, 18])
         self.assertEqual(list(view), [3, 4, 7, 11, 18])
 
-    @unittest.expectedFailure
+    #  @unittest.expectedFailure
     def test_has_length(self):
         numbers = [2, 1, 3, 4, 7, 11, 18]
         self.assertEqual(len(SliceView(numbers, stop=4)), 4)
@@ -104,7 +104,7 @@ class SliceViewTests(unittest.TestCase):
         self.assertEqual(len(SliceView(numbers, step=-1)), 7)
         self.assertEqual(len(SliceView(numbers, stop=1, step=-2)), 3)
 
-    @unittest.expectedFailure
+    #  @unittest.expectedFailure
     def test_slicing_and_indexing(self):
         numbers = [2, 1, 3, 4, 7, 11, 18]
         view = SliceView(numbers)
