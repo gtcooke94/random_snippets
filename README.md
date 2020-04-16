@@ -42,6 +42,7 @@ Generators/Iterators:
 - morsels/20191209_strict_zip
 - morsels/20191227_fancy_reader
 - morsels/20191230_cyclic_list
+- morsels/20200406_sliceview  - Very very good resouce on iterators generators iterables
 
 Itertools:
 - morsels/20191014_format_ranges
