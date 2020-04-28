@@ -16,6 +16,7 @@ Abstract Classes/ABC:
 - morsels/20200127_unpacker
 - morsels/20200210_proxy_dict
 - morsels/20200316_grouper
+- morsels/20200413_final_class
 
 Decorators:
 - morsels/20190819_count_decorator
@@ -31,6 +32,7 @@ Context Managers:
 
 Metaclasses:
 - morsels/20200217_fancy_reader
+- morsels/20200413_final_class
 
 String Parsing:
 - morsels/20191007_tags_equal
