@@ -61,6 +61,7 @@ Dunder Methods:
 - bites/34.UserClass
 - morsels/20191021_fuzzy_string
 - morsels/20191104_vector
+- morsels/20200504_month_delta
 
 Inheritance/Custom Collections:
 - morsels/20191209_permadict
@@ -86,6 +87,7 @@ Dataclass:
 Descriptors:
 - morsels/20191111_alias
 - morsels/20200120_cached_property
+- morsels/20200420_validators
 
 Big Numbers/Decimal:
 - morsels/20191202_perfect_square
