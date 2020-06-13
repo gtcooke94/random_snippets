@@ -29,6 +29,7 @@ Context Managers:
 - morsels/20190930_suppress
 - morsels/20191125_cd
 - morsels/20200106_timer
+- morsels/20200518_comparator
 
 Metaclasses:
 - morsels/20200217_fancy_reader
