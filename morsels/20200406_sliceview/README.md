@@ -34,3 +34,11 @@ class SliceView(Sequence):
         else:
             return SliceView(self, index.start, index.stop, index.step)
 ```
+
+There's a much better way to do `__getitem__`
+
+```
+for sequence in self.sequences:
+    if i < len(sequence):
+        return sequence[i]
+    i -= len(sequence)
