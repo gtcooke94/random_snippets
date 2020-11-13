@@ -1,7 +1,11 @@
 # random_snippets
-Random Snippets of Code
+Snippets of Code
 
-This repo contains randoms snippets of code and little things I have worked on, often from toy examples or going through sections of python books.
+This repo contains snippets of code and little things I have worked on, often from exerices or going through sections of python books.
+
+Morsels - Python Morsels
+Bites - PyBites
+
 
 Topics:
 
